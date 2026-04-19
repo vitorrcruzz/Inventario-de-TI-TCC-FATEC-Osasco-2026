@@ -1,0 +1,211 @@
+:root {
+  --azul-fatec: #1F4E79;
+  --azul-claro: #2E75B6;
+  --cinza-bg:   #F4F6F9;
+}
+
+body {
+  background: var(--cinza-bg);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── Sidebar ─────────────────────────────────────────── */
+#sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: var(--azul-fatec);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar .logo {
+  padding: 1.5rem 1rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+#sidebar .logo h5 {
+  color: #fff;
+  font-size: .9rem;
+  margin: 0;
+}
+
+#sidebar .logo small {
+  color: rgba(255,255,255,.6);
+  font-size: .75rem;
+}
+
+#sidebar .nav-link {
+  color: rgba(255,255,255,.75);
+  padding: .65rem 1.25rem;
+  border-radius: .4rem;
+  margin: .1rem .5rem;
+  font-size: .875rem;
+  transition: background .15s;
+}
+
+#sidebar .nav-link:hover,
+#sidebar .nav-link.active {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
+
+#sidebar .nav-link i {
+  margin-right: .6rem;
+  font-size: 1rem;
+}
+
+#sidebar .badge-count {
+  background: rgba(255,255,255,.2);
+  color: #fff;
+  font-size: .7rem;
+  border-radius: 10px;
+  padding: .1rem .45rem;
+}
+
+#sidebar .rodape-sidebar {
+  margin-top: auto;
+  padding: 1rem;
+}
+
+/* ── Main ────────────────────────────────────────────── */
+#main {
+  margin-left: 240px;
+  padding: 2rem;
+}
+
+/* ── Topbar ──────────────────────────────────────────── */
+.topbar {
+  background: #fff;
+  border-radius: .6rem;
+  padding: .9rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--azul-fatec);
+  font-weight: 600;
+}
+
+/* ── Cards de estatística ────────────────────────────── */
+.stat-card {
+  background: #fff;
+  border-radius: .7rem;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  border-left: 4px solid;
+  transition: transform .15s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card.total   { border-color: var(--azul-claro); }
+.stat-card.online  { border-color: #28a745; }
+.stat-card.offline { border-color: #dc3545; }
+.stat-card.scan    { border-color: #fd7e14; }
+
+.stat-card .numero {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-card .label {
+  font-size: .8rem;
+  color: #6c757d;
+  margin-top: .3rem;
+}
+
+.stat-card .icone {
+  font-size: 1.8rem;
+  opacity: .25;
+}
+
+/* ── Badges de status ────────────────────────────────── */
+.badge-online  { background: #d4edda; color: #155724; }
+.badge-offline { background: #f8d7da; color: #721c24; }
+
+/* ── Cards de tabela ─────────────────────────────────── */
+.table-card {
+  background: #fff;
+  border-radius: .7rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  overflow: hidden;
+}
+
+.table-card .card-header {
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-card .card-header h5 {
+  margin: 0;
+  font-size: .95rem;
+  color: #333;
+}
+
+table.dataTable tbody tr:hover {
+  background: #f0f4ff !important;
+}
+
+/* ── Botão de scan ───────────────────────────────────── */
+#btn-scan {
+  background: var(--azul-claro);
+  border: none;
+  color: #fff;
+}
+
+#btn-scan:hover { background: var(--azul-fatec); }
+
+#btn-scan.scanning {
+  opacity: .7;
+  pointer-events: none;
+}
+
+#scan-spinner { display: none; }
+#scan-spinner.visible { display: inline-block; }
+
+/* ── Toast ───────────────────────────────────────────── */
+.toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+}
+/* ── Cards de info no modal ──────────────────────────── */
+.info-card {
+  background: #f8f9fa;
+  border-radius: .6rem;
+  padding: 1rem;
+  height: 100%;
+  border: 1px solid #e9ecef;
+}
+
+.info-label {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--azul-claro);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .6rem;
+}
+
+.info-card .table td {
+  padding: .25rem .3rem;
+  font-size: .85rem;
+}

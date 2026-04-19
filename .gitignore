@@ -1,0 +1,6 @@
+database/inventario.db
+exports/
+.venv/
+.vscode/
+__pycache__/
+*.pyc
