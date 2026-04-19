@@ -265,6 +265,37 @@ Ano: 2026
 
 ---
 
+## 🔀 Controle de versão
+
+Este projeto utiliza **Git** para controle de versão e **GitHub** como repositório remoto, seguindo boas práticas de desenvolvimento de software.
+
+### Fluxo de trabalho
+
+```bash
+# Clonar o repositório
+git clone https://github.com/vitorrcruzz/Inventario-de-TI-TCC-FATEC-Osasco-2026.git
+
+# Verificar status das alterações
+git status
+
+# Adicionar arquivos modificados
+git add .
+
+# Registrar as alterações com descrição
+git commit -m "descricao da alteracao"
+
+# Enviar para o GitHub
+git push
+```
+
+### Boas práticas adotadas
+
+- Commits frequentes com mensagens descritivas em português
+- `.gitignore` configurado para não versionar banco de dados, ambiente virtual e arquivos temporários
+- Histórico de alterações rastreável por funcionalidade
+
+---
+
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos como Trabalho de Conclusão de Curso (TCC).
