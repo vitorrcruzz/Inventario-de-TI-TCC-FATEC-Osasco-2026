@@ -257,7 +257,7 @@ Configuráveis no `docker-compose.yml`:
 
 ## 🏫 Instituição
 
-**FATEC Osasco — Prefeitura Hirant Sanazar**  
+**FATEC Osasco — Prefeito Hirant Sanazar**  
 Curso Superior de Tecnologia em Redes de Computadores  
 Disciplina: Projeto de Redes de Computadores  
 Professores orientadores: [Leandro Palha]  
