@@ -148,7 +148,7 @@ inventario-ti/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/inventario-ti.git
+git clone https://github.com/vitorrcruzz/Inventario-de-TI-TCC-FATEC-Osasco-2026.git
 cd inventario-ti
 
 # 2. Suba todos os containers
