@@ -35,12 +35,8 @@ O ambiente de testes é 100% containerizado via **Docker**, simulando equipament
 ## 🖼️ Screenshots
 
 ### Dashboard principal
-```
-┌─────────────────────────────────────────────────────┐
-│  12 Total │  8 Online  │  4 Offline │  2 Varreduras │
-│  Gráfico de rosca por tipo + Histórico de barras    │
-└─────────────────────────────────────────────────────┘
-```
+
+<img width="900" height="650" alt="prototipo dashboard" src="https://github.com/user-attachments/assets/ffb33a59-e747-4269-9e35-201a12b59481" />
 
 ### Tabela de dispositivos
 - IP, Hostname, Tipo, Status, Modelo, Sistema Op., Processador, Memória, Armazenamento, **Licença**, Uptime
