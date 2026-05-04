@@ -48,5 +48,5 @@ def estatisticas():
 def historico():
     registros = HistoricoVarredura.query.order_by(
         HistoricoVarredura.id.desc()
-    ).limit(20).all()
+    ).all()  # Remove o .limit(20)
     return jsonify([r.to_dict() for r in registros])
